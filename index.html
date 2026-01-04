@@ -5,36 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFOPRAX | Estrategia de Datos y Arquitectura</title>
     <style>
-        :root { --primary-green: #2ecc71; --dark-bg: #1a1a1a; --text-light: #f4f4f4; }
-        body { background-color: var(--dark-bg); color: var(--text-light); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
-        .container { max-width: 800px; padding: 20px; }
-        .logo { font-size: 3rem; font-weight: bold; color: var(--primary-green); letter-spacing: 2px; margin-bottom: 10px; }
-        h1 { font-size: 1.5rem; border-bottom: 2px solid var(--primary-green); display: inline-block; padding-bottom: 10px; margin-bottom: 30px; }
-        .mvp-box { background: #262626; padding: 30px; border-radius: 10px; border-left: 5px solid var(--primary-green); margin: 20px 0; text-align: left; }
-        .mvp-title { color: var(--primary-green); font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; display: block; }
-        p { line-height: 1.6; color: #ccc; }
-        .cta-btn { display: inline-block; margin-top: 30px; padding: 12px 30px; background-color: var(--primary-green); color: var(--dark-bg); text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
-        .cta-btn:hover { background-color: #27ae60; transform: translateY(-2px); }
-        .footer { margin-top: 50px; font-size: 0.8rem; color: #666; }
+        :root { --primary-green: #2ecc71; --dark-bg: #121212; --card-bg: #1e1e1e; --text-light: #e0e0e0; }
+        body { background-color: var(--dark-bg); color: var(--text-light); font-family: 'Inter', 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; }
+        .logo { font-size: 4rem; font-weight: 800; color: var(--primary-green); letter-spacing: -2px; margin: 0; }
+        .tagline { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 4px; color: #666; margin-bottom: 40px; }
+        .container { max-width: 900px; width: 100%; }
+        
+        /* Sección Praxis - El Impacto */
+        .praxis-section { margin-bottom: 50px; font-style: italic; border-bottom: 1px solid #333; padding-bottom: 40px; }
+        .praxis-text { font-size: 1.4rem; color: #fff; max-width: 700px; margin: 0 auto; }
+        .praxis-highlight { color: var(--primary-green); font-weight: bold; font-style: normal; }
+
+        .mvp-card { background: var(--card-bg); padding: 40px; border-radius: 15px; border-top: 4px solid var(--primary-green); text-align: left; box-shadow: 0 20px 40px rgba(0,0,0,0.4); margin-bottom: 40px; }
+        .mvp-title { color: var(--primary-green); font-size: 1.6rem; font-weight: bold; margin-bottom: 15px; display: block; }
+        
+        .btn-group { margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 16px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; font-size: 1rem; }
+        .btn-primary { background: var(--primary-green); color: #000; }
+        .btn-secondary { border: 2px solid #333; color: #888; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(46, 204, 113, 0.2); }
+        
+        .footer { font-size: 0.8rem; color: #444; margin-top: 60px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">INFOPRAX</div>
-        <h1>Estrategia de Datos • Arquitectura • Praxis</h1>
-        
-        <p>Transformamos la complejidad técnica en claridad estratégica. 17 años de trayectoria internacional liderando ecosistemas de datos en Chile y Brasil.</p>
+    <section class="hero">
+        <div class="container">
+            <p class="logo">INFOPRAX</p>
+            <p class="tagline">Data Architecture & Business Strategy</p>
 
-        <div class="mvp-box">
-            <span class="mvp-title">MVP: Data Health Audit</span>
-            <p>Diagnóstico integral para detectar ineficiencias, riesgos de continuidad y activos redundantes en su infraestructura de BI. Una hoja de ruta clara para la toma de decisiones y el escalamiento hacia IA.</p>
+            <div class="praxis-section">
+                <p class="praxis-text">
+                    "La <span class="praxis-highlight">Praxis</span> es el punto donde la teoría técnica se encuentra con la ejecución estratégica. No entregamos manuales teóricos; diseñamos arquitecturas honestas y enfocadas en resultados reales."
+                </p>
+            </div>
+
+            <div class="mvp-card">
+                <span class="mvp-title">Data Health Audit (MVP)</span>
+                <p>Diagnóstico senior integral para detectar ineficiencias, riesgos de continuidad y activos redundantes. Proveemos la hoja de ruta técnica necesaria para asegurar su inversión tecnológica y preparar el escalamiento hacia IA.</p>
+                <p><strong>17 años de trayectoria internacional • Chile & Brasil</strong></p>
+            </div>
+
+            <div class="btn-group">
+                <a href="mailto:contacto@infoprax.cl" class="btn btn-primary">Iniciar Auditoría</a>
+                <a href="https://www.linkedin.com/in/andre-huenupil-aninir/" target="_blank" class="btn btn-secondary">Validación Profesional (LinkedIn)</a>
+            </div>
+
+            <div class="footer">
+                &copy; 2026 INFOPRAX. Infraestructura con cifrado <strong>SSL Full (Strict)</strong> y protección <strong>DNSSEC</strong> activa.
+            </div>
         </div>
-
-        <a href="https://www.linkedin.com/in/andre-huenupil-aninir/" class="cta-btn">Consultar Consultoría Senior</a>
-
-        <div class="footer">
-            &copy; 2026 INFOPRAX. Infraestructura segura y resiliente.
-        </div>
-    </div>
+    </section>
 </body>
 </html>
