@@ -6,11 +6,13 @@
     <title>INFOPRAX | Estrategia de Datos y Arquitectura</title>
     <style>
         :root {
-            --primary-green: #2ecc71;
-            --dark-bg: #1a1a1a;
-            --card-bg: #262626;
+            /* Colores extraídos del logo (Teal/Cian) */
+            --primary-teal: #007A8A; 
+            --accent-teal: #0097a7;
+            --dark-bg: #000000; /* Fondo negro puro */
+            --card-bg: #121212;
             --text-light: #f4f4f4;
-            --text-grey: #cccccc;
+            --text-grey: #8fb1b5; /* Gris con matiz teal para coherencia */
         }
 
         body {
@@ -27,28 +29,33 @@
         }
 
         .container {
-            max-width: 850px;
+            max-width: 900px;
             padding: 40px 20px;
         }
 
         .logo {
-            /* Estilos actualizados para el contenedor del logo */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
         }
 
         .logo img {
-            /* Ajuste del tamaño del logo */
-            max-width: 300px;
-            height: auto;
+            /* Dimensiones solicitadas: 500px ancho y 300px alto */
+            width: 500px;
+            height: 300px;
+            /* object-fit asegura que el logo no se deforme dentro del espacio */
+            object-fit: contain; 
         }
 
         h1 {
             font-size: 1.3rem;
-            border-bottom: 3px solid var(--primary-green);
+            border-bottom: 3px solid var(--primary-teal);
             display: inline-block;
             padding-bottom: 10px;
             margin-bottom: 30px;
             font-weight: 600;
+            color: var(--text-light);
+            letter-spacing: 1px;
         }
 
         /* Texto de impacto con definición de Praxis */
@@ -62,7 +69,7 @@
         }
 
         .praxis-highlight {
-            color: var(--primary-green);
+            color: var(--accent-teal);
             font-weight: 700;
         }
 
@@ -71,14 +78,14 @@
             background: var(--card-bg);
             padding: 35px;
             border-radius: 12px;
-            border-left: 6px solid var(--primary-green);
+            border-left: 6px solid var(--primary-teal);
             margin: 30px 0;
             text-align: left;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .mvp-title {
-            color: var(--primary-green);
+            color: var(--primary-teal);
             font-weight: 800;
             font-size: 1.6rem;
             margin-bottom: 15px;
@@ -97,6 +104,8 @@
             font-size: 1.15rem;
             margin-top: 20px;
             display: block;
+            border-top: 1px solid #333;
+            padding-top: 15px;
         }
 
         /* Botones */
@@ -119,32 +128,34 @@
         }
 
         .btn-primary {
-            background-color: var(--primary-green);
-            color: var(--dark-bg);
+            background-color: var(--primary-teal);
+            color: white;
         }
 
         .btn-secondary {
-            border: 2px solid #444;
-            color: #aaa;
+            border: 2px solid var(--primary-teal);
+            color: var(--primary-teal);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            opacity: 0.9;
+            filter: brightness(1.2);
+            box-shadow: 0 5px 15px rgba(0, 122, 138, 0.3);
         }
 
         .footer {
             margin-top: 60px;
             font-size: 0.8rem;
-            color: #555;
+            color: #444;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <img src="logo_ipx.svg" alt="Logo">
+            <img src="logo_ipx.svg" alt="INFOPRAX Logo">
         </div>
+        
         <h1>Estrategia de Datos • Arquitectura • Praxis</h1>
         
         <p class="intro-text">
@@ -154,7 +165,7 @@
         <div class="mvp-box">
             <span class="mvp-title">Data Health Audit</span>
             <p class="mvp-description">
-                Diagnóstico senior integral para detectar ineficiencias, riesgos de continuidad y activos redundantes en su infraestructura de BI. Proveemos la hoja de ruta técnica necesaria para asegurar su inversión tecnológica y preparar el escalamiento hacia IA.
+                Diagnóstico senior integral para detectar ineficiencias, riesgos de continuidad y activos redundantes en su infraestructura de BI.
             </p>
             <span class="mvp-trajectory">
                 17 años de trayectoria internacional • Chile & Brasil
@@ -163,7 +174,7 @@
 
         <div class="btn-group">
             <a href="mailto:contacto@infoprax.cl" class="btn btn-primary">Agendar Auditoría Senior</a>
-            <a href="https://www.linkedin.com/in/andre-huenupil-aninir/" target="_blank" class="btn btn-secondary">LinkedIn (Validación Profesional)</a>
+            <a href="https://www.linkedin.com/in/andre-huenupil-aninir/" target="_blank" class="btn btn-secondary">LinkedIn Profesional</a>
         </div>
 
         <div class="footer">
