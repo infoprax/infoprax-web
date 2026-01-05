@@ -32,12 +32,14 @@
         }
 
         .logo {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--primary-green);
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
+            /* Estilos actualizados para el contenedor del logo */
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            /* Ajuste del tamaño del logo */
+            max-width: 300px;
+            height: auto;
         }
 
         h1 {
@@ -140,7 +142,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">INFOPRAX</div>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
         <h1>Estrategia de Datos • Arquitectura • Praxis</h1>
         
         <p class="intro-text">
@@ -148,7 +152,7 @@
         </p>
 
         <div class="mvp-box">
-            <span class="mvp-title">Auditoria de Salud de Datos</span>
+            <span class="mvp-title">Data Health Audit</span>
             <p class="mvp-description">
                 Diagnóstico senior integral para detectar ineficiencias, riesgos de continuidad y activos redundantes en su infraestructura de BI. Proveemos la hoja de ruta técnica necesaria para asegurar su inversión tecnológica y preparar el escalamiento hacia IA.
             </p>
