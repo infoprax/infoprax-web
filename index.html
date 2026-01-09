@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFOPRAX | Estrategia de Datos y Arquitectura</title>
+    <title>INFOPRAX | Arquitectura de Datos y Estrategia</title>
     <style>
         :root {
-            /* Colores extraídos del logo (Teal/Cian) */
             --primary-teal: #007A8A; 
             --accent-teal: #0097a7;
-            --dark-bg: #000000; /* Fondo negro puro */
+            --dark-bg: #000000; 
             --card-bg: #121212;
             --text-light: #f4f4f4;
-            --text-grey: #8fb1b5; /* Gris con matiz teal para coherencia */
+            --text-grey: #8fb1b5; 
         }
 
         body {
@@ -34,36 +33,44 @@
         }
 
         .logo {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             display: flex;
             justify-content: center;
         }
 
         .logo img {
-            /* Dimensiones solicitadas: 500px ancho y 300px alto */
-            width: 500px;
-            height: 300px;
-            /* object-fit asegura que el logo no se deforme dentro del espacio */
+            width: 450px;
+            height: 250px;
             object-fit: contain; 
         }
 
         h1 {
-            font-size: 1.3rem;
-            border-bottom: 3px solid var(--primary-teal);
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--primary-teal);
             display: inline-block;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
             font-weight: 600;
             color: var(--text-light);
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        /* Texto de impacto con definición de Praxis */
+        /* Hook / Pregunta de impacto */
+        .hook-question {
+            color: var(--text-light);
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 15px;
+            display: block;
+        }
+
         .intro-text {
             color: var(--text-grey);
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             margin-bottom: 40px;
-            max-width: 750px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -73,7 +80,6 @@
             font-weight: 700;
         }
 
-        /* Caja del MVP */
         .mvp-box {
             background: var(--card-bg);
             padding: 35px;
@@ -81,13 +87,23 @@
             border-left: 6px solid var(--primary-teal);
             margin: 30px 0;
             text-align: left;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         }
 
         .mvp-title {
             color: var(--primary-teal);
             font-weight: 800;
-            font-size: 1.6rem;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .mvp-subtitle {
+            color: var(--accent-teal);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             margin-bottom: 15px;
             display: block;
         }
@@ -100,28 +116,28 @@
 
         .mvp-trajectory {
             color: #ffffff;
-            font-weight: 800;
-            font-size: 1.15rem;
+            font-weight: 700;
+            font-size: 1.2rem;
             margin-top: 20px;
             display: block;
-            border-top: 1px solid #333;
+            border-top: 1px solid #222;
             padding-top: 15px;
+            letter-spacing: 0.5px;
         }
 
-        /* Botones */
         .btn-group {
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         .btn {
             display: inline-block;
-            padding: 15px 35px;
+            padding: 16px 35px;
             text-decoration: none;
-            font-weight: 800;
+            font-weight: 700;
             border-radius: 6px;
             transition: all 0.3s ease;
             font-size: 1rem;
@@ -134,19 +150,20 @@
 
         .btn-secondary {
             border: 2px solid var(--primary-teal);
-            color: var(--primary-teal);
+            color: var(--text-light);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            filter: brightness(1.2);
-            box-shadow: 0 5px 15px rgba(0, 122, 138, 0.3);
+            filter: brightness(1.1);
+            box-shadow: 0 8px 20px rgba(0, 122, 138, 0.4);
         }
 
         .footer {
             margin-top: 60px;
-            font-size: 0.8rem;
-            color: #444;
+            font-size: 0.85rem;
+            color: #555;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -158,14 +175,17 @@
         
         <h1>Estrategia de Datos • Arquitectura • Praxis</h1>
         
+        <span class="hook-question">¿Sabe usted si los datos que ve en su reporte matutino son reales o simplemente ruido?</span>
+
         <p class="intro-text">
-            Transformamos la complejidad técnica en claridad estratégica a través de la <span class="praxis-highlight">Praxis</span>: la unión de la teoría técnica con la ejecución real en terreno para garantizar resultados operativos.
+            Transformamos la complejidad técnica en claridad operativa. Actuamos como el <span class="praxis-highlight">puente estratégico</span> que asegura que la tecnología sea rentable, confiable y trabaje a favor de su negocio.
         </p>
 
         <div class="mvp-box">
             <span class="mvp-title">Data Health Audit</span>
+            <span class="mvp-subtitle">Intervención Estratégica de 2 a 4 semanas</span>
             <p class="mvp-description">
-                Diagnóstico senior integral para detectar ineficiencias, riesgos de continuidad y activos redundantes en su infraestructura de BI.
+                Diagnóstico senior integral diseñado para detectar ineficiencias, riesgos de continuidad operativa y activos redundantes en su infraestructura de información.
             </p>
             <span class="mvp-trajectory">
                 17 años de trayectoria internacional • Chile & Brasil
@@ -178,7 +198,7 @@
         </div>
 
         <div class="footer">
-            &copy; 2026 INFOPRAX.
+            &copy; 2026 INFOPRAX. Todos los derechos reservados.
         </div>
     </div>
 </body>
